@@ -6,15 +6,12 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
-    // HALAMAN LOGIN
     public function login()
     {
         return view('login', [
             'username' => ''
         ]);
     }
-
-    // HALAMAN DASHBOARD
     public function dashboard(Request $request)
     {
         $username = $request->query('username');

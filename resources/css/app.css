@@ -677,16 +677,22 @@ tbody tr:hover {
     }
 }
 
+
 @media (max-width: 480px) {
 
-.stats-grid {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    align-items: stretch;
-    gap: 20px;
-    width: 100%;
-    margin-bottom: 35px;
-}
+    .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: stretch;
+        gap: 12px;
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    .stat-card {
+        padding: 16px;
+        min-height: 160px;
+    }
 
     .material-grid {
         grid-template-columns: 1fr;
@@ -699,16 +705,6 @@ tbody tr:hover {
     .content-card {
         padding: 18px;
     }
-
-.stat-card {
-    display: block;
-    width: 100%;
-    min-height: 180px;
-    padding: 25px;
-    background: var(--white);
-    border-radius: 18px;
-    box-shadow: var(--shadow);
-}
 
     .stat-detail-content {
         padding: 15px;
@@ -727,4 +723,5 @@ tbody tr:hover {
         width: 120px;
         height: 120px;
     }
+
 }
